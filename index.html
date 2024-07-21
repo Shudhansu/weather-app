@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+            <p user-tab>Your Weather</p>
+            <p search-tab>Search Weather</p>
+        </div>
+
+        <div class="main-container">
+
+            <!-- Grant Access container -->
+
+            <div class="grant-access-container">
+                <img src="./assets/location.png" loading="lazy" >
+                <p class="para-1">Grant Location Access</p>
+                <p class="para-2">Allow Access To Get Weather Information</p>
+
+                <p class="grant-access-btn">Grant Access</p>
+            </div>
+
+            <!-- Search weather container -->
+            <form class="search-weather-container">
+                <input type="text" placeholder="Search for city..." class="search">
+                <button type="submit">
+                    <img src="./assets/search.png" loading="lazy">
+                </button>
+            </form>
+
+            <!-- Loading-container -->
+            <div class="loading-container">
+                <img src="./assets/loading.gif" loading="lazy">
+                <p>Loading</p>
+            </div>
+
+            <!-- weather information container -->
+            <div class="weather-info-container">
+                <div class="div-1">
+                    <p city-name></p>
+                    <img country-symbol>
+                </div>
+                <p class="weather-name" weather-name></p>
+                <img  class="weather-image" weather-image>
+                <p class="temperature" temperature></p>
+
+                <div class="container">
+                    <div class="box">
+                        <img src="./assets/wind.png" loading="lazy">
+                        <p class="m">WindSpeed</p>
+                        <p class="m" wind-speed></p>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/humidity.png" loading="lazy">
+                        <p class="m">Humidity</p>
+                        <p class="m" humidity></p>
+                    </div>
+                    <div class="box">
+                        <img src="./assets/cloud.png" loading="lazy">
+                        <p class="m n">Clouds</p>
+                        <p class="m" clouds></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

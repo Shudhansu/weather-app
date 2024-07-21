@@ -1,0 +1,243 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tab{
+    background-color:rgba(219, 226, 239, 0.5) ;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 2%;
+    /* opacity: 0.9; */
+}
+
+.tab-container{
+    display: flex;
+    flex-direction: row;
+    width: 39%;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.tab-container p:nth-child(1){
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    padding: 2% 3%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.tab-container p:nth-child(2){
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding: 2% 3%;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.grant-access-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grant-access-container img{
+    width: 15%;
+    margin-top: 9%;
+}
+
+.para-1{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.para-2{
+    color: white;
+    margin-top: 3%;
+    font-size: 0.9rem;
+}
+
+.grant-access-btn{
+    width: 30%;
+    background-color: #3f72af;
+    color: white;
+    text-transform: uppercase;
+    padding: 2% 5%;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.search-weather-container{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search-weather-container input{
+    background-color: rgba(219, 226, 239, 0.5);
+    color: white;
+    padding: 11% 70%;
+    height: 5%;
+    display: flex;
+    border: 2px solid rgba(219, 226, 239,0.8 );
+    border-radius: 0.8rem;
+    margin-top: 10%;
+    margin-right: 20%;
+    font-size: 1rem;
+}
+
+.search-weather-container input::placeholder{
+    color: white;
+    font-size: 1rem;
+    transform: translateX(-55%);
+}
+
+.search-weather-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F72AF;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    position: absolute;
+    right: 31%;
+    border: none;
+    top: 30%;
+    cursor: pointer;
+}
+
+.search-weather-container button img{
+    height: 20px;
+    width: 20px;
+}
+
+.loading-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading-container img{
+    margin-top: 10%;
+    width: 170px;
+}
+
+.loading-container p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.weather-info-container{
+    display: none;
+    flex-direction: column;
+    padding-left: 35%;
+}
+
+.div-1{
+    display: flex;
+    flex-direction: row;   
+    margin-top: 7%;
+}
+
+.div-1 p{
+    color: white;
+    font-size: 2rem;
+    margin-top: 5%;
+
+}
+
+.div-1 img{
+    width: 30px;
+    height: 30px;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.weather-name{
+    margin-top: 9%;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 21%;
+
+}
+
+.weather-image{
+    width: 70px;
+    margin-top: 3%;
+    margin-left: 21%;
+}
+
+.temperature{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 7%;
+}
+
+.container{
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    margin-top: 7%;
+    padding-right: 50%;
+    justify-content: center;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 5% 20%;
+    justify-content: center;
+}
+
+.box img{
+    width: 50px;
+}
+
+.m{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 7%;
+}
+
+.active{
+    display: flex;
+}
+
+
